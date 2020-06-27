@@ -14,12 +14,12 @@ LD_LIBRARY_PATH=/lib/ ./start.sh
 ```
 then saving it in the game's directory; in this way, launching the game through this new script, it should work.
 Also, if you want to make this workaround working also for the menu icon, then you should edit the `/home/user/.local/share/applications/gog_com-Gamefile.desktop` adding or editing the `[Exec]` line with the new script's path, just like this:
-```[Desktop entry]
+`[Desktop entry]
 .
 .
 .
 Exec="/home/user/GOG Games/Generic Game/script.sh"
-```
+`
 
 If you have suggestions or betters workaround please suggest me them or add them here.
 
