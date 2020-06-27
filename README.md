@@ -9,6 +9,7 @@ For example, I'd like to install the game after buying it in the GOG store. Afte
 My workaround consists in downloading `libxxxxx.so.0.deb or rpm` on the official repositories, compiling them (solving also its dipendences, because sometimes), then extracting and copying the `libxxxx.so.0.lib` file it in the `/lib` directory (or wherever you want); after this creating a new script file called `script.sh` like this:
 
 ```
+
 #!/bin/bash
 LD_LIBRARY_PATH=/lib/ ./start.sh
 
@@ -18,17 +19,9 @@ Also, if you want to make this workaround working also for the menu icon, then y
 If you have suggestions or betters workaround please suggest me them or add them here.
 
 
-Pietro Ciuffreda
-Lubuntu 20.04 LTS
+**Pietro Ciuffreda
+Lubuntu 20.04 LTS**
 
-
-
-
-<n>
-<n>
-<n>
-
-<n>
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
