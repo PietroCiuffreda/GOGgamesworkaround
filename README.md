@@ -1,18 +1,16 @@
 **GOG games workaround**
 
-This is a manual workaround for GOG games that don't work on Linux systems. I don't know if this is could be a temporary solution or a definitive one, but for many games and programs that requires a library that is not installed on the system it works.
+This is a manual workaround for GOG games that don't work on Linux systems. I don't know if this is could be a temporary solution or a definitive one, but it works for many games and applications that requires a library or libraries that are not installed on.
 
 For example, I'd like to install the game after buying it in the GOG store. After downloading the .sh file and install it, it crashes and the log says:
 
-`libxxxxx.so.0 no such file or directory  (generic library missing)`
+`libxxxxx.0 no such file or directory  (generic library/libraries missing)`
 
-My workaround consists in downloading `libxxxxx.so.0.deb or rpm` on the official repositories, compiling them (solving also its dipendences, because sometimes), then extracting and copying the `libxxxx.so.0.lib` file it in the `/lib` directory (or wherever you want); after this creating a new script file called `script.sh` like this:
+My workaround consists in downloading `libxxxxx.0.deb or rpm` on the official repositories, compiling them (solving also its dipendences, because sometimes), then extracting and copying the `libxxxx.0.lib` file it in the `/lib` directory; after this creating a new script file called `script.sh` like this:
 
 ```
-
 #!/bin/bash
 LD_LIBRARY_PATH=/lib/ ./start.sh
-
 ```
 then saving it in the game's directory; in this way, launching the game through this new script, it should work.
 Also, if you want to make this workaround working also for the menu icon, then you should edit the `/home/user/.local/share/applications/gog_com-Gamefile.desktop` adding or editing the `[Exec]` line with the new script's path.
