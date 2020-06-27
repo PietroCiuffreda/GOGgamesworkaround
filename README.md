@@ -1,6 +1,6 @@
 **GOG games workaround**
 
-This is a manual workaround for GOG games that don't work on Linux systems. I don't know if this is could be a temporary solution or a definitive one, but it works for many games and applications that requires a library or libraries that are not installed on.
+This is a manual workaround for GOG games that don't work on Linux systems. I don't know if this is could be a temporary solution or a definitive one, but it works for many games and applications that requires a library or libraries that are not installed on (or that are installed, but the game is unable to find them).
 
 For example, I'd like to install the game "Generic Game" after buying it in the GOG store. After downloading the .sh file and install it, it crashes and the log says:
 
