@@ -6,7 +6,7 @@ For example, I'd like to install the game "Generic Game" after buying it in the 
 
 `libxxxxx.0 no such file or directory  (generic library/libraries missing)`
 
-My workaround consists in downloading `libxxxxx.0.deb or rpm` on the official repositories, compiling them (solving also its dipendences, because sometimes), then extracting and copying the `libxxxx.0.lib` file it in the `/lib` directory; after this creating a new script file called `script.sh` like this:
+My workaround consists in downloading `libxxxxx.0.deb or rpm` on the official repositories, compiling them (solving also its dipendences) then extracting and copying the `libxxxx.0.lib` file it in the `/lib` directory; after this creating a new script file called `script.sh` like this:
 
 ```
 #!/bin/bash
